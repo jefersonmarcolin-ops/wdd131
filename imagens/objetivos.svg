@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" width="400" height="250" role="img" aria-label="Ilustração de objetivos de aprendizagem">
+  <rect width="400" height="250" fill="#fef3e2"/>
+  <circle cx="200" cy="110" r="70" fill="#e76f51" opacity="0.2"/>
+  <circle cx="200" cy="110" r="50" fill="#e76f51" opacity="0.4"/>
+  <circle cx="200" cy="110" r="30" fill="#e76f51"/>
+  <rect x="170" y="180" width="60" height="40" rx="6" fill="#264653"/>
+  <rect x="120" y="195" width="160" height="12" rx="4" fill="#2a9d8f"/>
+  <text x="200" y="118" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="22" font-weight="bold">GO</text>
+</svg>
