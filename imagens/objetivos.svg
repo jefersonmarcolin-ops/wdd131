@@ -1,4 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" width="400" height="250" role="img" aria-label="Ilustração de objetivos de aprendizagem">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" width="400" height="250" role="img" aria-labelledby="titulo-objetivos">
+  <title id="titulo-objetivos">Ilustracao de objetivos de aprendizagem</title>
   <rect width="400" height="250" fill="#fef3e2"/>
   <circle cx="200" cy="110" r="70" fill="#e76f51" opacity="0.2"/>
   <circle cx="200" cy="110" r="50" fill="#e76f51" opacity="0.4"/>
