@@ -34,10 +34,12 @@ header span {
     margin-bottom: 0.75rem;
 }
 
-header h1 {
+#course-title {
+    display: block;
     font-family: "Merriweather", serif;
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    font-weight: 700;
 }
 
 nav {
@@ -164,7 +166,7 @@ footer p:last-child {
         grid-template-columns: 1fr;
     }
 
-    header h1 {
+    #course-title {
         font-size: 1.2rem;
     }
 
