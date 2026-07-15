@@ -1,0 +1,48 @@
+/* Visualizacao maior - carregado apos templos.css (mobile first) */
+@media screen and (min-width: 750px) {
+    #menu {
+        display: none;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1.25rem 1.5rem;
+        gap: 1rem;
+    }
+
+    .logo-titulo {
+        justify-content: center;
+    }
+
+    .logo-titulo span {
+        font-size: 1.6rem;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: auto;
+        gap: 0.4rem;
+    }
+
+    nav a {
+        padding: 0.5rem 1.1rem;
+    }
+
+    main > h1 {
+        font-size: 2rem;
+    }
+
+    .album {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+    }
+
+    figure img {
+        height: 240px;
+    }
+}
