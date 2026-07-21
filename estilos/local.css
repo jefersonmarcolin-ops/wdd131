@@ -1,0 +1,167 @@
+:root {
+    --verde: #009c3b;
+    --amarelo: #ffdf00;
+    --azul: #002776;
+    --azul-escuro: #001a4d;
+    --texto: #1a1a1a;
+    --clara: #ffffff;
+    --fundo: #f5f7f5;
+    --sombra: 0 6px 18px rgba(0, 39, 118, 0.18);
+    --largura: 1100px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: var(--texto);
+    background: var(--fundo);
+    line-height: 1.55;
+}
+
+header {
+    background: linear-gradient(135deg, var(--verde), var(--azul));
+    color: var(--clara);
+    text-align: center;
+    padding: 1.25rem 1rem;
+}
+
+header h1 {
+    font-family: "Merriweather", serif;
+    font-size: 1.8rem;
+    letter-spacing: 0.02em;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 420px;
+    object-fit: cover;
+}
+
+main {
+    max-width: var(--largura);
+    margin: 0 auto;
+    padding: 1.25rem 1rem 2rem;
+    display: grid;
+    gap: 1.25rem;
+}
+
+.dados,
+.clima {
+    background: var(--clara);
+    border-radius: 10px;
+    box-shadow: var(--sombra);
+    padding: 1.25rem;
+}
+
+.dados h2,
+.clima h2 {
+    font-family: "Merriweather", serif;
+    color: var(--azul);
+    margin-bottom: 0.9rem;
+    padding-bottom: 0.35rem;
+    border-bottom: 3px solid var(--amarelo);
+}
+
+.dados dl {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.55rem 1rem;
+}
+
+.dados dt {
+    font-weight: 700;
+    color: var(--verde);
+}
+
+.dados dd {
+    margin: 0;
+}
+
+.clima {
+    text-align: center;
+}
+
+.icone-clima {
+    width: 72px;
+    height: 72px;
+    margin: 0 auto 0.75rem;
+    display: block;
+}
+
+.clima p {
+    margin-bottom: 0.45rem;
+}
+
+.clima p:last-child {
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+/* Emoticon via pseudo-element only on large screens */
+.clima h2::after {
+    content: none;
+}
+
+footer {
+    background: var(--azul-escuro);
+    color: var(--clara);
+    text-align: center;
+    padding: 1.1rem 1rem;
+}
+
+footer p {
+    margin-bottom: 0.2rem;
+    font-size: 0.9rem;
+}
+
+footer p:last-child {
+    margin-bottom: 0;
+    font-size: 0.85rem;
+    opacity: 0.85;
+}
+
+@media screen and (min-width: 760px) {
+    header h1 {
+        font-size: 2.4rem;
+    }
+
+    main {
+        display: block;
+        padding-top: 1.5rem;
+        position: relative;
+    }
+
+    .hero {
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: var(--sombra);
+        margin-bottom: 1.5rem;
+    }
+
+    .hero img {
+        max-height: 420px;
+    }
+
+    .conteudo-duplo {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        gap: 1.5rem;
+        align-items: start;
+    }
+
+    .icone-clima {
+        display: none;
+    }
+
+    .clima h2::after {
+        content: " \26C5";
+        margin-left: 0.35rem;
+    }
+}

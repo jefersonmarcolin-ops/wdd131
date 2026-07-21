@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Brasil – Jeferson Marcolino</title>
+    <meta name="description" content="WDD 131 – Fundamentos da Web Dinâmica. Jeferson Marcolino. Página sobre o Brasil com dados, clima e imagens responsivas.">
+    <meta name="author" content="Jeferson Marcolino">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/local.css">
+    <script src="scripts/local.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Brasil</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 760px)" srcset="imagens/brasil-wide.webp" type="image/webp">
+                <img
+                    src="imagens/brasil-narrow.webp"
+                    srcset="imagens/brasil-narrow.webp 800w, imagens/brasil-wide.webp 1400w"
+                    sizes="(min-width: 760px) 1100px, 100vw"
+                    alt="Paisagem inspirada no Brasil com colinas verdes, oceano e céu azul"
+                    width="1400"
+                    height="560">
+            </picture>
+        </div>
+
+        <div class="conteudo-duplo">
+        <section class="dados">
+            <h2>Dados</h2>
+            <dl>
+                <dt>Área</dt>
+                <dd>8.510.417 km²</dd>
+
+                <dt>População</dt>
+                <dd>aproximadamente 203 milhões</dd>
+
+                <dt>Capital</dt>
+                <dd>Brasília</dd>
+
+                <dt>Idiomas</dt>
+                <dd>Português</dd>
+
+                <dt>Moeda</dt>
+                <dd>Real (BRL)</dd>
+
+                <dt>Fuso horário</dt>
+                <dd>UTC−3 (Brasília)</dd>
+
+                <dt>Prefixo telefônico</dt>
+                <dd>+55</dd>
+
+                <dt>Religião</dt>
+                <dd>Majoritária cristã, com diversidade religiosa</dd>
+            </dl>
+        </section>
+
+        <section class="clima">
+            <h2>Clima</h2>
+            <img class="icone-clima" src="imagens/clima.svg" alt="Ícone de clima parcialmente nublado" width="64" height="64">
+            <p>Temperatura: <span id="temperatura">8</span> °C</p>
+            <p>Condições: Parcialmente nublado</p>
+            <p>Vento: <span id="vento">18</span> km/h</p>
+            <p>Sensação térmica: <span id="sensacao"></span></p>
+        </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            &copy;<span id="anoatual"></span> Jeferson Marcolino | Brasil
+        </p>
+        <p id="ultimaModificacao"></p>
+    </footer>
+</body>
+</html>
